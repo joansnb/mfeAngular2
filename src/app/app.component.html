@@ -1,0 +1,69 @@
+<div class="container">  
+    <header>  
+        <h1>App del espacio con Angular</h1>  
+    </header>  
+
+    <main>  
+        <div class="tabs">  
+            <div   
+                class="tab"   
+                [class.active]="activeTab === 'inicio'"   
+                (click)="selectTab('inicio')">Inicio</div>  
+            <div   
+                class="tab"   
+                [class.active]="activeTab === 'historia'"   
+                (click)="selectTab('historia')">Historia</div>  
+            <div   
+                class="tab"   
+                [class.active]="activeTab === 'pilotos'"   
+                (click)="selectTab('pilotos')">Pilotos</div>  
+        </div>  
+
+        <div *ngIf="activeTab === 'inicio'" class="content">  
+            <section>  
+                <h2>Introducción a la Exploración Espacial</h2>  
+                <p>  
+                    La exploración espacial representa el esfuerzo humano por conocer más allá de nuestro planeta.  
+                    Desde los primeros satélites hasta las misiones tripuladas a la Luna y las actuales  
+                    investigaciones en la Estación Espacial Internacional (ISS), el ser humano continúa expandiendo  
+                    sus horizontes en el cosmos. 
+                </p>  
+            </section>  
+            <section>  
+                <h2>Misiones Actuales</h2>  
+                <p>  
+                    Actualmente, diversas agencias espaciales como NASA, ESA y SpaceX están desarrollando  
+                    ambiciosos proyectos para explorar Marte, regresar a la Luna y estudiar asteroides cercanos.  
+                    La nueva era espacial combina esfuerzos públicos y privados para alcanzar nuevas fronteras.  
+                </p>  
+            </section>  
+        </div>  
+
+        <div *ngIf="activeTab === 'historia'" class="content">  
+            <section>  
+                <h2>Historia de la Carrera Espacial</h2>  
+                <p>  
+                    La carrera espacial comenzó en los años 50 durante la Guerra Fría entre Estados Unidos y  
+                    la Unión Soviética. El lanzamiento del Sputnik 1 en 1957 marcó el inicio, seguido por hitos como  
+                    el primer ser humano en el espacio (Yuri Gagarin, 1961) y la llegada del hombre a la Luna con  
+                    el Apolo 11 en 1969.   
+                </p>  
+            </section>  
+        </div>  
+
+        <div *ngIf="activeTab === 'pilotos'" class="content">  
+            <section>  
+                <h2>Astronautas Pioneros</h2>  
+                <p>  
+                    Figuras como Neil Armstrong, Buzz Aldrin y Valentina Tereshkova abrieron camino en la exploración  
+                    espacial humana. Sus misiones establecieron precedentes y demostraron la capacidad humana para  
+                    adaptarse a condiciones extremas fuera de nuestro planeta. 
+                </p>  
+            </section>  
+        </div>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2025 Angular Remote App. Todos los derechos reservados.</p>  
+    </footer>  
+</div>
