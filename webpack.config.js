@@ -10,7 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "angularRemoteApp",
+    uniqueName: "angularRemoteApp2",
     publicPath: "auto",
     scriptType: 'text/javascript'
   },

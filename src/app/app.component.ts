@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'angular-remote-app-2',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-remote-app';
+  title = 'angular-remote-app2';
   activeTab: string = 'inicio'; // Tab activa por defecto  
 
   selectTab(tab: string) {  

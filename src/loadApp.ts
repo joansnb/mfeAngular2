@@ -9,14 +9,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-const mount = (containerId: string) => {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-
-  const appElement = document.createElement('app-root');
-  appElement.id = `angular-app-${containerId}`;
-  container.appendChild(appElement);
-
+const mount = () => {
   platformBrowserDynamic().bootstrapModule(AppModule)
     .catch(err => console.error(err));
 }
