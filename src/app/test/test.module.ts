@@ -13,6 +13,6 @@ import { createCustomElement } from '@angular/elements';
 export class TestModule {
   constructor(private injector: Injector) {
     const element = createCustomElement(TestComponent, { injector: injector });
-    customElements.define('angular-test-component', element);
+    customElements.define('space-test-component', element);
   }
 }
