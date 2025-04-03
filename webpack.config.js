@@ -10,7 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "SpaceApp",
+    uniqueName: "space-app",
     publicPath: "auto",
     scriptType: 'text/javascript'
   },
@@ -29,10 +29,10 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "SpaceApp",
-      filename: "remoteEntry.js",
+      filename: "remoteEntry2.js",
       exposes: {
-        "./TestComponent": "./src/app/test/test.component.ts", // component
-        './SpaceApp': './src/loadApp.ts', // app
+        "./TestComponent": "./src/app/test/loadTest.ts", // component
+        // './SpaceApp': './src/loadApp.ts', // app
       },
 
       shared: share({
