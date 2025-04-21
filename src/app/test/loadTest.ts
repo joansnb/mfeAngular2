@@ -10,7 +10,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-export const mountTest = () => {
+export const mount = () => {
   platformBrowserDynamic().bootstrapModule(TestModule)
     .catch(err => console.error(err));
 }

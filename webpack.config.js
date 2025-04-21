@@ -20,7 +20,7 @@ module.exports = {
   resolve: {
     alias: {
       ...sharedMappings.getAliases(),
-    }, 
+    },
     extensions:['.ts', '.js', '.tsx', '.jsx']
   },
   experiments: {
@@ -31,7 +31,7 @@ module.exports = {
       name: "SpaceApp",
       filename: "remoteEntry2.js",
       exposes: {
-        "./TestComponent": "./src/app/test/loadTest.ts", // component
+        "./SpaceApp": "./src/app/test/loadTest.ts", // component
         // './SpaceApp': './src/loadApp.ts', // app
       },
 
